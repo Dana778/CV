@@ -89,8 +89,13 @@ body {
 }
 
 .link.link-blue {
+  color: #1a4091;
+  border-color: #1a4091;
+}
+
+.link.link-blue:hover {
   color: #0A1C4D;
-  border-color: #0A1C4D;
+  border-color: transparent;
 }
 
 .dark-theme .link.link-blue {
@@ -98,9 +103,9 @@ body {
   border-color: #646590;
 }
 
-.link.link-blue:hover {
-  color: #0A1C4D;
-  border-color: transparent;
+.dark-theme .link.link-blue:hover {
+  color: #8f90c7;
+  border-color: #8f90c7;
 }
 
 .link.link-purple {
