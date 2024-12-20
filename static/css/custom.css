@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'Navigo';
+  src: url('../fonts/Navigo-Regular-Desktop.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+#theme-toggle, #language-toggle, #telegram, #gmail {
+  background-color: transparent;
+  border: none;
+}
+
+#theme-toggle:hover, #language-toggle:hover, #telegram:hover, #gmail:hover{
+  background-color: #0A1C4D !important;
+}
+
+.dark-bg {
+  background-color: #102D69;
+  color: #fff;
+}
+
+.dark-bg .navbar-toggler {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.font-color-blue {
+  color: #102D69;
+}
+
+.btn-blue {
+  font-size: 1.15rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #102D69;
+  border-color: #102D69;
+}
+
+.promo-text {
+  font-size: 24px;
+  opacity: .75;
+  font-family: 'Roboto', sans-serif;
+}
+
+.link-border-bottom {
+  display: inline-block;
+  padding:0;
+  text-decoration: none;
+  line-height: 1.3;
+  border-bottom: 1px solid #6c757d;
+  transition: .4s ease;
+}
+
+.text-white.link-border-bottom {
+  border-bottom: 1px solid #fff;
+}
+
+.link-border-bottom:hover {
+  border-color: transparent;
+}
+
+.link {
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+
+}
+
+.link:hover {
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  border-color: transparent;
+}
+
+.link.link-blue {
+  color: #0A1C4D;
+  border-color: #0A1C4D;
+}
+
+.dark-theme .link.link-blue {
+  color: #646590;
+  border-color: #646590;
+}
+
+.link.link-blue:hover {
+  color: #0A1C4D;
+  border-color: transparent;
+}
+
+.link.link-purple {
+  color: #DFC7F2;
+  border-color: #DFC7F2;
+  transition: .4s ease;
+  border-bottom: 1px solid rgba(255,255,255,.8);
+
+}
+
+.link.link-purple:hover {
+  color: #DFC7F2;
+  border-color: transparent;
+}
+
+.link.link-pink {
+  color: #F22B3E;
+  border-color: #F22B3E;
+}
+
+.link.link-pink:hover {
+  color: #F22B3E;
+  border-color: transparent;
+}
+
+.text-pink {
+  color: #b72535 !important;
+}
+
+.logo:hover {
+  text-decoration: none;
+  transition: .4s ease;
+  opacity: .85;
+}
+
+.logo-title {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.logo-subtitle {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.contact-button {
+  background-color: #b72535;
+  color: #fff;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+
+.contact-button:hover {
+  background-color: #0A1C4D !important;
+  color: white !important; /* Белый текст */
+}
+
+.contact-icon {
+  background-color: none !important;
+  width: auto;
+  display: inline-block;
+}
+
+.contact-icon:hover {
+  background-color: #0A1C4D !important;
+}
+
+.story p {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.story-link {
+  color: #102D69;
+  text-decoration: none;
+  transition: .4s ease;
+  border-bottom: 2px solid #102D69;
+}
+
+.story-link:hover {
+  color: #102D69;
+  text-decoration: none;
+  border-color: transparent;
+}
+
+.greeting-text {
+  color: #DFC7F2;
+  font-family: 'Navigo', sans-serif;
+  font-weight: normal;
+}
+
+.navbar .nav-link.link-purple {
+  color: #DFC7F2 !important;
+}
+
+.navbar .nav-link.link-purple:hover {
+  color: #DFC7F2 !important;
+}
+
+.logo-right {
+  margin-left: 6px;
+}
+
+.text-blue {
+  color: #DFC7F2 !important;
+}
+
+h1.greeting-text {
+  color: #0A1C4D;
+}
+
+.btn {
+  background-color: #b72535;
+  color: #fff;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0A1C4D;
+  color: white;
+}
+
+.navigo-font {
+  font-family: 'Navigo', sans-serif;
+  font-weight: normal;
+}
+
+.text-purple {
+  color: #DFC7F2 !important;
+}
+
+.text-white-40 {
+  color: #fff !important;
+  opacity: 0.4;
+}
+
+.position {
+  margin-left: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills-container a {
+  margin: 20px;
+  margin-bottom : 1;
+}
+
+.skills-container img {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  margin-bottom : 1;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.center-container {
+      display: grid;
+      place-items: center;
+    }
+
+.btn img {
+  background: none;
+}
+
+.contact-buttons {
+    gap: 20px;
+}
+
+
+
+
+
+
+/* Темная тема */
+.dark-theme {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+
+.dark-theme .dark-bg {
+  background-color: #03064A !important;
+  color: #fff !important;
+}
+
+.dark-theme .nav-link {
+    color: #d1d1d1;
+}
+
+.dark-theme .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.dark-theme .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.sticky_hat {
+    background-color: #102D69; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    position: fixed; /* Закрепляет панель */
+    top: 0; /* Отступ сверху */
+    left: 0; /* Отступ слева */
+    width: 100%; /* На всю ширину экрана */
+    z-index: 1030;
+    height: 130px;
+}
+
+.dark-theme .sticky_hat {
+    background-color: #03064A;
+    color: #d1d1d1;
+}

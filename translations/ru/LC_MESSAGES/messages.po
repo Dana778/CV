@@ -1,0 +1,300 @@
+# Переводы на русский язык для PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# Этот файл распространяется под той же лицензией, что и проект PROJECT.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-20 01:42+0300\n"
+"PO-Revision-Date: 2024-12-20 01:42+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11 ? 0 : n % "
+"10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: templates/index.html:14
+msgid "CV"
+msgstr "Резюме"
+
+#: templates/index.html:25
+msgid "Моя фотография"
+msgstr "Моя фотография"
+
+#: templates/index.html:29
+msgid "Как я выгляжу"
+msgstr "Как я выгляжу"
+
+#: templates/index.html:30
+msgid "Бедный студент"
+msgstr "Бедный студент"
+
+#: templates/index.html:35
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
+
+#: templates/index.html:42
+msgid "Вкратце обо мне"
+msgstr "Вкратце обо мне"
+
+#: templates/index.html:45 templates/index.html:117
+msgid "Образование"
+msgstr "Образование"
+
+#: templates/index.html:48 templates/index.html:151
+msgid "Достижения и проекты"
+msgstr "Достижения и проекты"
+
+#: templates/index.html:51 templates/index.html:213
+msgid "Навыки"
+msgstr "Навыки"
+
+#: templates/index.html:54 templates/index.html:239
+msgid "Мои цели"
+msgstr "Мои цели"
+
+#: templates/index.html:57
+msgid "Контакты"
+msgstr "Контакты"
+
+#: templates/index.html:64 templates/index.html:65
+msgid "Переключить тему"
+msgstr "Переключить тему"
+
+#: templates/index.html:70 templates/index.html:71
+msgid "Переключить язык"
+msgstr "Переключить язык"
+
+#: templates/index.html:80
+msgid "Привет! Это мое CV. Самое важное обо мне:"
+msgstr "Привет! Это мое резюме. Самое важное обо мне:"
+
+#: templates/index.html:82
+msgid "Я &mdash; студентка НИУ ВШЭ, Факультета Компьютерных Наук"
+msgstr "Я — студентка НИУ ВШЭ, Факультета Компьютерных Наук"
+
+#: templates/index.html:84
+msgid "Мне нравится сфера анализа данных, хочу работать в ML"
+msgstr "Мне нравится сфера анализа данных, хочу работать в ML"
+
+#: templates/index.html:86
+msgid "Основной язык: Python"
+msgstr "Основной язык: Python"
+
+#: templates/index.html:88
+msgid "Написать мне"
+msgstr "Написать мне"
+
+#: templates/index.html:96
+msgid "Обо мне"
+msgstr "Обо мне"
+
+#: templates/index.html:100
+msgid "Меня зовут Дана, мне 20 лет, я учусь на 2 курсе"
+msgstr "Меня зовут Дана, мне 20 лет, я учусь на 2 курсе"
+
+#: templates/index.html:102
+msgid ""
+"Мое направление - Прикладная математика и информатика (часто жалею об "
+"этом)"
+msgstr ""
+"Мое направление — Прикладная математика и информатика (часто жалею об "
+"этом)"
+
+#: templates/index.html:104
+msgid "Я играю в ЧГК, с командой заняли 4 место на Школьном чемпионате России"
+msgstr "Я играю в ЧГК, с командой заняли 4 место на Школьном чемпионате России"
+
+#: templates/index.html:106
+msgid "Знаю русский, английский и немецкий"
+msgstr "Знаю русский, английский и немецкий"
+
+#: templates/index.html:108
+msgid "Я считаю своим самым сильным качеством коммуникабельность"
+msgstr "Я считаю своим самым сильным качеством коммуникабельность"
+
+#: templates/index.html:121
+msgid "Логотип ВШЭ"
+msgstr "Логотип ВШЭ"
+
+#: templates/index.html:125
+msgid "Национальный исследовательский университет"
+msgstr "Национальный исследовательский университет"
+
+#: templates/index.html:127
+msgid "Студент"
+msgstr "Студент"
+
+#: templates/index.html:128
+msgid "Сентябрь 2023 – Настоящее время"
+msgstr "Сентябрь 2023 – Настоящее время"
+
+#: templates/index.html:134
+msgid "Логотип Лицея информационных технологий"
+msgstr "Логотип Лицея информационных технологий"
+
+#: templates/index.html:138
+msgid "ГБОУ Школа № 1533"
+msgstr "ГБОУ Школа № 1533"
+
+#: templates/index.html:139
+msgid "Лицей информационных технологий"
+msgstr "Лицей информационных технологий"
+
+#: templates/index.html:140
+msgid "Школьник"
+msgstr "Школьник"
+
+#: templates/index.html:141
+msgid "Сентябрь 2018 – Май 2023"
+msgstr "Сентябрь 2018 – Май 2023"
+
+#: templates/index.html:156
+msgid "Логотип летней школы программной инженерии"
+msgstr "Логотип летней школы программной инженерии"
+
+#: templates/index.html:160
+msgid "Летняя школа программной инженерии"
+msgstr "Летняя школа программной инженерии"
+
+#: templates/index.html:161
+msgid "Специальность: разработка мобильных приложений"
+msgstr "Специальность: разработка мобильных приложений"
+
+#: templates/index.html:163
+msgid "Сертификат"
+msgstr "Сертификат"
+
+#: templates/index.html:170
+msgid "Логотип миникурса по аналитике данных"
+msgstr "Логотип миникурса по аналитике данных"
+
+#: templates/index.html:174
+msgid "Миникурс введение в аналитику данных"
+msgstr "Миникурс «Введение в аналитику данных»"
+
+#: templates/index.html:176
+msgid "Пример работы"
+msgstr "Пример работы"
+
+#: templates/index.html:183
+msgid "Логотип Яндекс образования"
+msgstr "Логотип Яндекс.Образование"
+
+#: templates/index.html:187
+msgid "Промоутер Яндекс образования"
+msgstr "Промоутер Яндекс.Образование"
+
+#: templates/index.html:189
+msgid "Фото с фестиваля Пикник Афиши"
+msgstr "Фото с фестиваля «Пикник Афиши»"
+
+#: templates/index.html:196
+msgid "Логотип Aviasales"
+msgstr "Логотип Aviasales"
+
+#: templates/index.html:200
+msgid "Avaisales на минималках"
+msgstr "Aviasales на минималках"
+
+#: templates/index.html:202
+msgid "Ссылка на Github"
+msgstr "Ссылка на Github"
+
+#: templates/index.html:216
+msgid "Python"
+msgstr "Python"
+
+#: templates/index.html:218
+msgid "Hypothesis"
+msgstr "Hypothesis"
+
+#: templates/index.html:219
+msgid "Logo Mark Light BG"
+msgstr "Logo Mark Light BG"
+
+#: templates/index.html:220
+msgid "NumPy"
+msgstr "NumPy"
+
+#: templates/index.html:221
+msgid "Matplotlib"
+msgstr "Matplotlib"
+
+#: templates/index.html:222
+msgid "Pandas"
+msgstr "Pandas"
+
+#: templates/index.html:224
+msgid "Assembly"
+msgstr "Assembly"
+
+#: templates/index.html:225
+msgid "C++"
+msgstr "C++"
+
+#: templates/index.html:226
+msgid "C#"
+msgstr "C#"
+
+#: templates/index.html:227
+msgid "PostgreSQL"
+msgstr "PostgreSQL"
+
+#: templates/index.html:228
+msgid "GitHub"
+msgstr "GitHub"
+
+#: templates/index.html:229
+msgid "GitLab"
+msgstr "GitLab"
+
+#: templates/index.html:230
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: templates/index.html:232
+msgid "HTML"
+msgstr "HTML"
+
+#: templates/index.html:242
+msgid "Изображение дома"
+msgstr "Изображение дома"
+
+#: templates/index.html:250
+msgid "Сотрудничество"
+msgstr "Сотрудничество"
+
+#: templates/index.html:253
+msgid "Если интересно, что я могу для вас сделать, пишите:"
+msgstr "Если интересно, что я могу для вас сделать, пишите:"
+
+#: templates/index.html:256 templates/index.html:257
+msgid "Telegram"
+msgstr "Telegram"
+
+#: templates/index.html:259 templates/index.html:260
+msgid "Gmail"
+msgstr "Gmail"
+
+#: templates/index.html:263
+msgid "Посмотреть резюме"
+msgstr "View Resume"
+
+#: templates/index.html:266
+msgid "Видео-визитка"
+msgstr "Видео-визитка"
+
+#: templates/index.html:279
+msgid "Сделано с любовью в 2024 году."
+msgstr "Сделано с любовью в 2024 году."
+
+msgid "«Высшая школа экономики» (НИУ ВШЭ)"
+msgstr "«Высшая школа экономики» (НИУ ВШЭ)"
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <!-- Подключение пользовательского CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+    <!-- Фавикон -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='pictures/title_pic.png') }}">
+    <!-- Заголовок страницы -->
+    <title>{{ _('CV') }}</title>
+</head>
+<body>
+<!-- Секция промо с темным фоном - шапка сайта -->
+<section class="promo dark-bg pt-2 pb-5">
+    <div class="container">
+        <!-- Навигационная панель с логотипом и кнопками -->
+        <nav class="navbar navbar-expand-lg mb-5 navbar-dark sticky_hat">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand logo d-flex align-items-center text-decoration-none">
+                    <div class="logo-left pe-2">
+                        <img src="{{ url_for('static', filename='pictures/my_photo.jpeg') }}"
+                             alt="{{ _('Моя фотография') }}"
+                             class="rounded-circle" width="80">
+                    </div>
+                    <div class="logo-right" style="margin-left: 6px;">
+                        <div class="logo-title link-purple">{{ _('Как я выгляжу') }}</div>
+                        <div class="logo-subtitle text-pink">{{ _('Бедный студент') }}</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="{{ _('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Меню навигации -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav m-auto">
+                        <li class="nav-item mx-3">
+                            <a href="#story" class="nav-link link-purple link-border-bottom">{{ _('Вкратце обо мне')
+                                }}</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#study" class="nav-link link-purple link-border-bottom">{{ _('Образование') }}</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#projects" class="nav-link link-purple link-border-bottom">{{ _('Достижения и проекты') }}</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#skills" class="nav-link link-purple link-border-bottom">{{ _('Навыки') }}</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#goals" class="nav-link link-purple link-border-bottom">{{ _('Мои цели') }}</a>
+                        </li>
+                        <li class="nav-item mx-3 mr-0">
+                            <a href="#contact" class="nav-link link-purple link-border-bottom">{{ _('Контакты') }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Кнопки переключения темы и языка-->
+                <div class="me-2">
+                    <!-- Иконка темы -->
+                    <button id="theme-toggle" type="button" class="btn btn-sm btn-outline-light"
+                            aria-label="{{ _('Переключить тему') }}">
+                        <img src="{{ url_for('static', filename='pictures/sun.png') }}"
+                             alt="{{ _('Переключить тему') }}" width="30" height="30">
+                    </button>
+                </div>
+                <div class="me-2">
+                    <!-- Иконка языка -->
+                    <button id="language-toggle" type="button" class="btn btn-sm btn-outline-light"
+                            aria-label="{{ _('Переключить язык') }}">
+                        <img id="language-icon" src="{{ url_for('static', filename='pictures/translate.png') }}"
+                             alt="{{ _('Переключить язык') }}" width="30" height="30">
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Блок приветствия с основной информацией -->
+        <div class="row py-sm-5" >
+            <div class="col-12 col-lg-8 offset-lg-2 mt-6 mb-0 mb-sm-4 py-5" style="padding-top: 130px !important;">
+                <h1 class="h1 font-weight-bold font greeting-text text-blue mb-4">{{ _('Привет! Это мое CV. Самое важное обо мне:') }}</h1>
+                <p class="promo-text pb-5">
+                    {{ _('Я &mdash; студентка НИУ ВШЭ, Факультета Компьютерных Наук') }}
+                    <br>
+                    {{ _('Мне нравится сфера анализа данных, хочу работать в ML') }}
+                    <br>
+                    {{ _('Основной язык: Python') }}
+                </p>
+                <a href="#contact" class="btn text-center">{{ _('Написать мне') }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция "Обо мне" -->
+<section class="story container py-5 text-center" id="story">
+    <h2 class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 navigo-font">{{ _('Обо мне') }}</h2>
+    <div class="row">
+        <div class="col-12 col-sm-8 offset-sm-2 px-2 pb-5">
+            <p class="font-weight-bold pb-4 text-start">
+                {{ _('Меня зовут Дана, мне 20 лет, я учусь на 2 курсе') }}
+                <br>
+                {{ _('Мое направление - Прикладная математика и информатика (часто жалею об этом)') }}
+                <br>
+                {{ _('Я играю в ЧГК, с командой заняли 4 место на Школьном чемпионате России') }}
+                <br>
+                {{ _('Знаю русский, английский и немецкий') }}
+                <br>
+                {{ _('Я считаю своим самым сильным качеством коммуникабельность') }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция образование с темным фоном -->
+<section class="study dark-bg pt-3 pt-sm-5 pb-3" id="study">
+    <div class="container">
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 navigo-font">{{ _('Образование')
+            }}</h2>
+        <div class="study row text-white offset-sm-2 col-sm-8">
+            <div class="d-flex align-items-center mb-4">
+                <a href="https://www.hse.ru/">
+                    <img src="{{ url_for('static', filename='pictures/01_Logo_HSE_full_rus_PANTONE_for_dark_2.png') }}"
+                         alt="{{ _('Логотип ВШЭ') }}" class="me-3"
+                         style="height: 60px; margin-top: -105px;">
+                </a>
+                <div class="d-flex flex-column">
+                    <h3 class="h4 mb-3">{{ _('Национальный исследовательский университет') }}
+                        <br> {{ _('«Высшая школа экономики» (НИУ ВШЭ)') }}</h3>
+                    <h4 class="h5 text-purple">{{ _('Студент') }}</h4>
+                    <p class="text-white-40">{{ _('Сентябрь 2023 – Настоящее время') }}</p>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-4">
+                <a href="https://www.lit.msu.ru/">
+                    <img src="{{ url_for('static', filename='pictures/lit1533.jpeg') }}"
+                         alt="{{ _('Логотип Лицея информационных технологий') }}" class="me-3 rounded-circle"
+                         style="height: 60px; margin-top: -105px;">
+                </a>
+                <div class="d-flex flex-column">
+                    <h3 class="h4 mb-3">{{ _('ГБОУ Школа № 1533') }}
+                        <br> {{ _('Лицей информационных технологий') }}</h3>
+                    <h4 class="h5 text-purple">{{ _('Школьник') }}</h4>
+                    <p class="text-white-40">{{ _('Сентябрь 2018 – Май 2023') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция достижения и проекты -->
+<section class="projects pt-3 pt-sm-5 pb-3" id="projects">
+    <div class="container">
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 navigo-font">{{ _('Достижения и проекты') }}</h2>
+
+        <div class="projects row offset-sm-2 col-sm-8">
+            <div class="d-flex align-items-center mb-4">
+                <a href="https://cs.hse.ru/se/2023/">
+                    <img src="{{ url_for('static', filename='pictures/fcs_logo.jpg') }}"
+                         alt="{{ _('Логотип летней школы программной инженерии') }}" class="me-3 rounded-circle"
+                         style="height: 60px; margin-top: -60px;">
+                </a>
+                <div class="d-flex flex-column">
+                    <h3 class="h4 mb-2">{{ _('Летняя школа программной инженерии') }}
+                        <br> {{ _('Специальность: разработка мобильных приложений') }}</h3>
+                    <a href="https://disk.yandex.ru/i/0jQuh8Q2Tlu8gw" class="link link-blue " target="_blank">
+                        <h4 class="h5" style="text-decoration: underline;">{{ _('Сертификат') }}</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-4 mt-4">
+                <a href="https://cs.hse.ru/big-data/">
+                    <img src="{{ url_for('static', filename='pictures/fcs_logo_2.png') }}"
+                         alt="{{ _('Логотип миникурса по аналитике данных') }}" class="me-3 rounded-circle"
+                         style="height: 60px; margin-top: -50px;">
+                </a>
+                <div class="d-flex flex-column">
+                    <h3 class="h4 mb-2">{{ _('Миникурс введение в аналитику данных') }}</h3>
+                    <a href="https://colab.research.google.com/drive/1XNo-iPoYr0LqO7_ph0anoNV49k55AqRZ?usp=sharing"
+                       class="link link-blue " target="_blank">
+                        <h4 class="h5" style="text-decoration: underline;">{{ _('Пример работы') }}</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-4 mt-4">
+                <a href="https://education.yandex.ru/">
+                    <img src="{{ url_for('static', filename='pictures/Yandex_icon.svg.png') }}"
+                         alt="{{ _('Логотип Яндекс образования') }}" class="me-3"
+                         style="height: 63px; margin-top: -40px;">
+                </a>
+                <div class="d-flex flex-column">
+                    <h3 class="h4 mb-2">{{ _('Промоутер Яндекс образования') }}</h3>
+                    <a href="https://disk.yandex.ru/d/mwWAil5u53Wmyw" class="link link-blue " target="_blank">
+                        <h4 class="h5" style="text-decoration: underline;">{{ _('Фото с фестиваля Пикник Афиши') }}</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-4 mt-4">
+                <a href="https://www.aviasales.ru/">
+                    <img src="{{ url_for('static', filename='pictures/aviasales.jpeg') }}"
+                         alt="{{ _('Логотип Aviasales') }}" class="me-3 rounded-circle"
+                         style="height: 60px; margin-top: -50px;">
+                </a>
+                <div class="d-flex flex-column">
+                    <h3 class="h4 mb-2">{{ _('Avaisales на минималках') }}</h3>
+                    <a href="https://github.com/Kyronison/aviasalesforbitches" class="link link-blue " target="_blank">
+                        <h4 class="h5" style="text-decoration: underline;">{{ _('Ссылка на Github') }}</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция навыков с темным фоном -->
+<section class="skills dark-bg pt-3 pt-sm-5 pb-3" id="skills">
+    <div class="container">
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-sm-3 pb-3 navigo-font">{{ _('Навыки') }}</h2>
+        <div class="skills-container offset-sm-2 col-sm-8">
+            <a href="https://www.python.org/" class="mb-3" style="background-color: none;">
+                <img src="{{ url_for('static', filename='pictures/skills/python.png') }}" alt="{{ _('Python') }}"
+                     width="100" height="100">
+            </a>
+            <img src="{{ url_for('static', filename='pictures/skills/hypothesis.png') }}" alt="{{ _('Hypothesis') }}">
+            <img src="{{ url_for('static', filename='pictures/skills/logo-mark-lightbg.svg') }}"
+                 alt="{{ _('Logo Mark Light BG') }}">
+            <img src="{{ url_for('static', filename='pictures/skills/numpy-1.svg') }}" alt="{{ _('NumPy') }}">
+            <img src="{{ url_for('static', filename='pictures/skills/Matplotlib_icon.svg.png') }}"
+                 alt="{{ _('Matplotlib') }}">
+            <img src="{{ url_for('static', filename='pictures/skills/fbads-pandas.jpg') }}" alt="{{ _('Pandas') }}"
+                 class="rounded-circle">
+
+            <img src="{{ url_for('static', filename='pictures/skills/assembly-icon.png') }}" alt="{{ _('Assembly') }}"
+                 class="rounded-circle">
+            <img src="{{ url_for('static', filename='pictures/skills/C++_Logo.svg.png') }}" alt="{{ _('C++') }}"
+                 class="rounded-circle">
+            <img src="{{ url_for('static', filename='pictures/skills/C_sharp_logo.png') }}" alt="{{ _('C#') }}"
+                 class="rounded-circle">
+            <img src="{{ url_for('static', filename='pictures/skills/Postgresql.svg.png') }}"
+                 alt="{{ _('PostgreSQL') }}" class="rounded-circle">
+            <img src="{{ url_for('static', filename='pictures/skills/github.png') }}" alt="{{ _('GitHub') }}"
+                 class="rounded-circle">
+            <img src="{{ url_for('static', filename='pictures/skills/gitlab.png') }}" alt="{{ _('GitLab') }}"
+                 class="rounded-circle">
+            <img src="{{ url_for('static', filename='pictures/skills/javascript_logo_icon_214719.png') }}"
+                 alt="{{ _('JavaScript') }}" class="rounded-circle">
+
+            <img src="{{ url_for('static', filename='pictures/skills/html.png') }}" alt="{{ _('HTML') }}"
+                 class="rounded-circle">
+        </div>
+    </div>
+</section>
+
+<!-- Секция личных целей -->
+<section class="goals pt-3 pt-sm-5 pb-3" id="goals">
+    <h2 class="h2 font-weight-bold text-center mb-0 mb-sm-4 pb-5">{{ _('Мои цели') }}</h2>
+    <div class="row offset-sm-2 col-sm-8 center-container mb-3">
+        <div class="col-sm-8 pb-1">
+            <img src="{{ url_for('static', filename='pictures/house.png') }}" alt="{{ _('Изображение дома') }}"
+                 class="responsive-image">
+        </div>
+    </div>
+</section>
+
+<!-- Секция сотрудничества -->
+<section class="contact dark-bg pt-3 pt-sm-5 pb-3" id="contact">
+    <div class="container">
+        <h2 class="h2 font-weight-bold text-center mt-4 mt-sm-5 mb-sm-3 pb-5 navigo-font">{{ _('Сотрудничество') }}</h2>
+        <div class="contact row center-container text-white offset-sm-2 col-sm-8">
+            <div class="col-12 col-sm-8 pb-1 center-container">
+                <p class="pb-1 mb-3">{{ _('Если интересно, что я могу для вас сделать, пишите:') }}</p>
+                <!-- Блок с кнопками для связи -->
+                <p class="contact-buttons d-flex justify-content-start flex-wrap">
+                    <a href="https://t.me/daniella_2019" class="mb-3" id="telegram" aria-label="{{ _('Telegram') }}">
+                        <img src="{{ url_for('static', filename='pictures/telegram_icon.png') }}"
+                             alt="{{ _('Telegram') }}" width="25" height="25">
+                    </a>
+                    <a href="mailto:florakdd@gmail.com" class="mb-3" id="gmail" aria-label="{{ _('Gmail') }}">
+                        <img src="{{ url_for('static', filename='pictures/gmail_icon.png') }}" alt="{{ _('Gmail') }}"
+                             width="25" height="25">
+                    </a>
+                    <a href="https://disk.yandex.ru/i/edCl32ioSO1q2Q" class="btn mb-3 contact-button"
+                       target="_blank">{{ _('Посмотреть резюме') }}</a>
+                    <a href="https://disk.yandex.ru/i/yvkZJubcVs0itw" class="btn mb-3 contact-button"
+                       target="_blank">{{ _('Видео-визитка') }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Подвал сайта с темным фоном -->
+<footer class="footer">
+    <nav class="container navbar">
+        <ul class="nav m-auto py-2">
+            <li class="nav-item mx-3">
+                {{ _('Сделано с любовью в 2024 году.') }}
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+<!-- Подключение скриптов Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-theme');
+    }
+    themeToggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        if (body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
+    const languageToggle = document.getElementById('language-toggle');
+    const ruUrl = "{{ url_for('set_language', language='ru') }}";
+    const enUrl = "{{ url_for('set_language', language='en') }}";
+
+    languageToggle.addEventListener('click', () => {
+        const currentLocale = "{{ get_locale() }}";
+        const newLocale = (currentLocale === 'ru') ? 'en' : 'ru';
+        const newUrl = (newLocale === 'ru') ? ruUrl : enUrl;
+        window.location.href = newUrl;
+    });
+</script>
+</body>
+</html>
